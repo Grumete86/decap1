@@ -2,7 +2,7 @@ local_backend: true
 backend:
   name: github
   branch: main # Cambia esto si usas otro branch
-  repo: Grumete86/Decap1 # Reemplaza con tu usuario y repo de GitHub
+  repo: Grumete86/decap1 # Reemplaza con tu usuario y repo de GitHub
   site_domain: astro-prueba-xi.vercel.app/ #TU_DOMINIO.vercel.app # Cambia por tu dominio en Vercel o Netlify
   base_url: https://astro-prueba-xi.vercel.app/ #https://TU_DOMINIO.vercel.app
   auth_endpoint: oauth
