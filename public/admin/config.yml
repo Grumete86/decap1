@@ -1,0 +1,22 @@
+local_backend: true
+backend:
+  name: github
+  branch: main # Cambia esto si usas otro branch
+  repo: Grumete86/AcademiaIris # Reemplaza con tu usuario y repo de GitHub
+  site_domain: astro-prueba-xi.vercel.app/ #TU_DOMINIO.vercel.app # Cambia por tu dominio en Vercel o Netlify
+  base_url: https://astro-prueba-xi.vercel.app/ #https://TU_DOMINIO.vercel.app
+  auth_endpoint: oauth
+
+media_folder: "src/assets/images" # Carpeta donde se guardarán imágenes
+public_folder: "/assets/images" # Carpeta pública de imágenes
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Imagen destacada", name: "thumbnail", widget: "image" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
